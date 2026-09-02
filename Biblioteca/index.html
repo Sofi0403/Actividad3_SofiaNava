@@ -1,0 +1,259 @@
+<!-- Sofia Nava García  00531263 -->
+<!-- Actividad 4: Utilizando HTML -->
+<!-- Lunes 30 de agosto -->
+<!-- Programación para internet -->
+<!-- index.html -->
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Título de la mi página -->
+    <title>Mi librero| Biblioteca</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="img/favicon.png">
+
+    <!-- Conexión con CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ENCABEZADO -->
+    <header>
+        <div class="logo">
+            <span>📖</span> Mi librero
+        </div>
+
+        <!-- MENÚ -->
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#biblioteca">Mis libros</a>
+            <a href="#recomendaciones">Recomendaciones</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+    </header>
+
+
+    <!-- Desarrollo principal de mi página -->
+    <main>
+
+        <!-- INICIO -->
+        <section id="inicio" class="inicio">
+
+            <div class="texto-inicio">
+                <p class="subtitulo">TODO LO QUE HE ELEGIDO LEER Y RECORDAR</p>
+
+                <h1>Bienvenid@ a <br><span>Mi librero</span></h1>
+
+                <p>
+                   Aquí se encuentra mi colección de historias que me han hecho sentir que cada página no solo se lee, sino que se vive como una aventura.
+                </p>
+
+                <a href="#recomendaciones" class="boton">
+                    Historias que recomiendo
+                </a>
+            </div>
+
+
+            <!-- CARRUSEL DE IMAGENES PARA MI INICIO -->
+            <div class="carrusel">
+
+                <div class="libros">
+
+                    <div class="libro">
+                        <img src="img/libro1.jpg" alt="Seis de cuervos">
+                    </div>
+
+                    <div class="libro">
+                        <img src="img/libro2.jpg" alt="Percy Jackson">
+                    </div>
+
+                    <div class="libro">
+                        <img src="img/libro3.jpg" alt="Juego de tronos">
+                    </div>
+
+                    <div class="libro">
+                        <img src="img/libro4.jpg" alt="Correr o morir">
+                    </div>
+
+                    <div class="libro">
+                        <img src="img/libro5.jpg" alt="Anne of Green Gables">
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- MIS LIBROS -->
+        <section id="biblioteca" class="biblioteca">
+
+            <div class="titulo-seccion">
+                <p class="subtitulo">HISTORIAS QUE SE QUEDARON CONMIGO</p>
+                <h2>Mi librero</h2>
+            </div>
+
+            <div class="contenido-biblioteca">
+
+                <div class="imagen-biblioteca">
+                    <img src="img/librero1.jpg" alt="Librero1">
+                    <img src="img/librero2.jpg" alt="Librero2">
+                </div>
+
+                <div class="texto-biblioteca">
+                    <p>
+                        Muchas veces la portada sí influye en mí (porque seamos sinceros, una portada bonita llama la atención), pero lo que realmente termina de convencerme es una historia que consiga atraparme.
+                    </p>
+
+                    <p>
+                        Me llaman especialmente la atención los libros que han llegado a la gran pantalla o se han convertido en series. También disfruto mucho de las historias que tienen personajes interesantes, giros inesperados o una trama que me haga querer descubrir qué pasa después.
+                    </p>
+
+                    <h3>Y así, poco a poco, he armado mi colección.</h3>
+
+
+                    <h3>Mis géneros favoritos</h3>
+
+                    <!-- Lista -->
+                    <ul>
+                        <li>Ciencia ficción</li>
+                        <li>Fantasía</li>
+                        <li>Romance</li>
+                        <li>Misterio</li>
+                        <li>Novela histórica</li>
+                        <li>Distopía</li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- RECOMENDACIONES -->
+        <section id="recomendaciones" class="recomendaciones">
+
+            <div class="titulo-seccion">
+                <p class="subtitulo">LIBROS QUE PARA MÍ VALEN LA PENA</p>
+                <h2>Recomendaciones</h2>
+            </div>
+
+            <div class="tarjetas">
+
+                <article class="tarjeta">
+                    <div class="numero">01</div>
+                    <h3>Seis de cuervos</h3>
+                    <p>
+                        Una ciudad de estafas, robos y secretos donde todo tiene un precio. Entre callejones y negocios turbios, un atraco imposible está a punto de cambiarlo todo.
+                    </p>
+                    <a href="https://www.amazon.com.mx/ESTUCHE-ESPECIAL-Bilog%C3%ADa-Seis-cuervos/dp/8419266663/ref=asc_df_8419266663?mcid=de7d9b9390c23729988d8249e3ba685e&tag=gledskshopmx-20&linkCode=df0&hvadid=709952656952&hvpos=&hvnetw=g&hvrand=8713676154602027276&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9197578&hvtargid=pla-2089594550289&psc=1&hvocijid=8713676154602027276-8419266663-&hvexpln=0&language=es_MX" target="_blank">Ver libro →</a>
+                    <img src="img/portada1.jpg" alt="Portada de Seis de cuervos" class="imagen-tarjeta">
+                </article>
+
+                <article class="tarjeta">
+                    <div class="numero">02</div>
+                    <h3>The Maze Runner</h3>
+                    <p>
+                        Un enorme laberinto que cambia cada noche, rodeado por muros que esconden más de lo que parece. Nadie sabe quién lo construyó ni qué hay al otro lado. Solo saben que deben encontrar la salida.
+                    </p>
+                    <a href="https://www.amazon.com.mx/VRYA-Pack-Runner-James-Dashner/dp/B0GQ1TKMHL?source=ps-sl-shoppingads-lpcontext&ref_=fplfs&psc=1&smid=AVDBXBAVVSXLQ" target="_blank">Ver libro →</a>
+                    <img src="img/portada2.jpg" alt="Portada de Maze Runner" class="imagen-tarjeta">
+                </article>
+
+                <article class="tarjeta">
+                    <div class="numero">03</div>
+                    <h3>Juego de tronos</h3>
+                    <p>
+                        Un reino dividido por alianzas, traiciones y una lucha por el poder. Mientras las grandes casas se enfrentan, una amenaza mucho más antigua comienza a despertar más allá del muro.
+                    </p>
+                    <a href="https://www.amazon.com.mx/Paquete-Juego-Tronos-Edici%C3%B3n-Trade/dp/B0DNRS1TLP?source=ps-sl-shoppingads-lpcontext&ref_=fplfs&psc=1&smid=AVDBXBAVVSXLQ" target="_blank">Ver libro →</a>
+                    <img src="img/portada3.jpg" alt="Portada de Juego de tronos" class="imagen-tarjeta">
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- SECCIÓN CONTACTO -->
+        <section id="contacto" class="contacto">
+
+            <div class="titulo-seccion">
+                <p class="subtitulo">COMPARTAMOS HISTORIAS</p>
+                <h2>¿Qué estás leyendo?</h2>
+
+                <p>
+                    Cuéntame qué libro tienes entre manos, cuál ha sido tu favorito últimamente o qué historia crees que debería formar parte de esta biblioteca.
+                </p>
+            </div>
+
+
+            <!-- FORMULARIO -->
+            <form>
+
+                <label for="nombre">Nombre</label>
+                <input 
+                    type="text" 
+                    id="nombre" 
+                    name="nombre"
+                    placeholder="Escribe tu nombre"
+                    required
+                >
+
+                <label for="correo">Correo electrónico</label>
+                <input 
+                    type="email" 
+                    id="correo" 
+                    name="correo"
+                    placeholder="correo@ejemplo.com"
+                    required
+                >
+
+                <label for="mensaje">Mensaje</label>
+                <textarea 
+                    id="mensaje" 
+                    name="mensaje"
+                    rows="5"
+                    placeholder="Escribe tu mensaje..."
+                    required
+                ></textarea>
+
+                <button type="submit">
+                    Enviar mensaje
+                </button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <div class="logo">
+            <span>📖</span> Mi librero
+        </div>
+
+        <p>
+            TODO LO QUE HE ELEGIDO LEER Y RECORDAR
+        </p>
+
+        <div class="enlaces-footer">
+            <a href="#inicio">Inicio</a>
+            <a href="#biblioteca">Mis libros</a>
+            <a href="#recomendaciones">Recomendaciones</a>
+        </div>
+    </footer>
+
+</body>
+</html>

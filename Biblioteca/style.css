@@ -1,0 +1,472 @@
+/* Sofia Nava García  00531263 */
+/* Actividad 4: Utilizando HTML */
+/* Lunes 30 de agosto */
+/* Programación para internet */
+/* style.css */
+
+
+/* CONFIGURACIÓN GENERAL */
+/* Este archivo se creó con el uso de IA (Chat GPT) con el propósito de mejorar el diseño de la actividad */
+
+* { /* Se aplica la configuración a toda la página */
+    margin: 0; /* Elimina el margen predeterminado */
+    padding: 0; 
+    box-sizing: border-box; 
+}
+
+html {
+    scroll-behavior: smooth; /* Movimiento suave entre secciones */
+}
+
+body { /* Estilo del contenido de la página */
+    font-family: Georgia, 'Times New Roman', serif;
+    background-color: #f8f3ed;
+    color: #40352f;
+    line-height: 1.6;
+}
+
+
+/* HEADER */
+
+header { /* Estilo del encabeza */
+    background-color: #fffaf5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 8%;
+    border-bottom: 1px solid #e8ddd2;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.logo { /* Estilo para el nombre de mi biblioteca */
+    font-size: 24px;
+    font-weight: bold;
+    color: #725c75;
+}
+
+.logo span { /* Tamaño del libro */
+    font-size: 40px;
+}
+
+
+/* BARRA DE NAVEGACIÓN */
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a { /* Estilo para cuando esta en el modo normal */
+    text-decoration: none;
+    color: #594b45;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+nav a:hover { /* Cambia de color cada que se pasa el cursor */
+    color: #9a789c;
+}
+
+
+/* SECCIONES GENERALES  */
+
+section { /* Agregar el espacio entre las secciones  */
+    padding: 90px 8%;
+}
+
+.subtitulo { /* Estilo de textos arriba de títulos */
+    color: #9a789c;
+    font-size: 13px;
+    letter-spacing: 3px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.titulo-seccion { /* Títulos en el centro */
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+h2 { /* Títulos h2 */
+    font-size: 40px;
+    color: #40352f;
+}
+
+h3 { /* Títulos h3 */
+    color: #725c75;
+    margin-bottom: 15px;
+}
+
+
+/* INICIO */
+
+.inicio { /* Diseño general de la sección de inicio */
+    min-height: 650px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+    background-color: #eee5e8;
+}
+
+.texto-inicio { /* Ancho del contenido */
+    max-width: 520px;
+}
+
+.texto-inicio h1 { /* Título principal */
+    font-size: 58px;
+    line-height: 1.1;
+    margin-bottom: 25px;
+    color: #40352f;
+}
+
+.texto-inicio h1 span {
+    color: #725c75;
+}
+
+.texto-inicio p:not(.subtitulo) {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+
+/* BOTÓN */
+
+.boton { /* Diseño */
+    display: inline-block;
+    background-color: #725c75;
+    color: white;
+    padding: 13px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.boton:hover { /* Efectecto del botón con el cursor */
+    background-color: #59475d;
+    transform: translateY(-2px);
+}
+
+
+/* CARRUSEL */
+
+.carrusel { /* Diseño */
+    width: 650px;
+    overflow: hidden;
+}
+
+.libros { /* Organiza las imágenes y las anima */
+    display: flex;
+    gap: 20px;
+    animation: moverLibros 12s infinite;
+}
+
+.libro { /* Define el tamaño y apariencia de cada imagen */
+    min-width: 280px;
+    height: 390px;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 15px 30px rgba(64, 53, 47, 0.15);
+}
+
+.libro img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@keyframes moverLibros { /* Animación del carrusel */
+
+    0% {
+        transform: translateX(0);
+    }
+
+    20% {
+        transform: translateX(0);
+    }
+
+    30% {
+        transform: translateX(-220px);
+    }
+
+    40% {
+        transform: translateX(-220px);
+    }
+
+    50% {
+        transform: translateX(-440px);
+    }
+
+    60% {
+        transform: translateX(-440px);
+    }
+
+    70% {
+        transform: translateX(-660px);
+    }
+
+    80% {
+        transform: translateX(-660px);
+    }
+
+    90% {
+        transform: translateX(-880px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+
+
+/* BIBLIOTECA */
+
+/* Color de la sección */
+.biblioteca {
+    background-color: #fffaf5;
+}
+
+/* Imagen y texto de cada lado */
+.contenido-biblioteca {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* Espacio que ocupa el contenedor de la imagen */
+.imagen-biblioteca {
+    width: 60%;
+}
+
+/* Estilo de mi imagen */
+.imagen-biblioteca img {
+    width: 80%;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Estilo de mi texto */
+.texto-biblioteca {
+    width: 50%;
+}
+
+/* Estilo de los párrafos */
+.texto-biblioteca p {
+    margin-bottom: 18px;
+}
+
+/* Lista */
+.texto-biblioteca ul {
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.texto-biblioteca li {
+    margin-bottom: 5px;
+}
+
+
+/* RECOMENDACIONES */
+
+/* Color de fondo de la sección */
+.recomendaciones {
+    background-color: #eee5e8;
+}
+
+/* Organización de las tarjetitas */
+.tarjetas {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* Diseño de las tarjetas */
+.tarjeta {
+    background-color: #fffaf5;
+    padding: 35px;
+    width: 32%;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(64, 53, 47, 0.08);
+    transition: 0.3s;
+}
+
+/* Efecto del cursor */
+.tarjeta:hover {
+    transform: translateY(-6px);
+}
+
+.numero {
+    font-size: 14px;
+    color: #9a789c;
+    margin-bottom: 20px;
+}
+
+.tarjeta p {
+    margin-bottom: 20px;
+}
+
+/* Diseño de ver libro */
+.tarjeta a { 
+    color: #725c75; text-decoration: none; font-weight: bold; 
+}
+
+.imagen-tarjeta {
+    width: 100px;
+    height: 140px;
+    object-fit: cover;
+    display: block;
+    margin: 20px auto;
+    border-radius: 6px;
+}
+
+
+/* CONTACTO */
+
+.contacto { /* Color de fondo de la sección */
+    background-color: #fffaf5;
+}
+
+.contacto > .titulo-seccion > p:last-child { /* Ajusta el párrafo  */
+    max-width: 600px;
+    margin: 15px auto;
+}
+
+
+/* FORMULARIO */
+
+form { /* Organización del formulario */
+    max-width: 600px;
+    margin: 40px auto 0;
+    display: flex;
+    flex-direction: column;
+}
+
+form label { /* Estilos para las etiquetas */
+    margin-bottom: 7px;
+    font-weight: bold;
+    color: #594b45;
+}
+
+form input,
+form textarea { /* Estilos para los campos de texto */
+    font-family: inherit;
+    font-size: 15px;
+    padding: 13px;
+    margin-bottom: 20px;
+    border: 1px solid #ded1c7;
+    border-radius: 7px;
+    background-color: #fdf9f5;
+    outline: none;
+}
+
+form input:focus,
+form textarea:focus { /* Se cambia el borde del campo seleccionado */
+    border-color: #9a789c;
+}
+
+/* Botón */
+
+form button { /* Diseño general */
+    border: none;
+    background-color: #725c75;
+    color: white;
+    padding: 14px;
+    border-radius: 25px;
+    font-family: inherit;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Cambio de color con el cursor */
+form button:hover {
+    background-color: #59475d;
+}
+
+
+/* FOOTER */
+
+/* Diseño general del pie de página */
+footer {
+    background-color: #725c75;
+    color: #eee5e8;
+    text-align: center;
+    padding: 45px 8%;
+}
+
+footer .logo { /* Logo */
+    color: #eee5e8;
+    margin-bottom: 10px;
+}
+
+.enlaces-footer { /* Enlaces */
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin: 20px 0;
+}
+
+.enlaces-footer a {
+    color: #eee5e8;
+    text-decoration: none;
+}
+
+.enlaces-footer a:hover { /* Cambio de color */
+    color: #c9b2c9;
+}
+
+
+/* DISEÑO RESPONSIVO */
+/* Estilos para que se aplican a la pantalla sin importar el tamaño */
+@media (max-width: 800px) {
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .inicio {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .texto-inicio h1 {
+        font-size: 42px;
+    }
+
+    .carrusel {
+        width: 300px;
+    }
+
+    .contenido-biblioteca {
+        flex-direction: column;
+    }
+
+    .imagen-biblioteca,
+    .texto-biblioteca {
+        width: 100%;
+    }
+
+    .tarjetas {
+        flex-direction: column;
+    }
+
+    .tarjeta {
+        width: 100%;
+    }
+}
+
